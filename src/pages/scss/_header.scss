@@ -1,0 +1,26 @@
+@use 'variables';
+@use 'mixins';
+
+header {
+	background-color: rgba(69, 167, 242, 0.614);
+	height: variables.$header-height;
+
+	>.container {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+#company-logo {
+	height: 0.9 * variables.$header-height;
+}
+
+#navigation {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	list-style: none;
+	li {
+		padding-left: 30px;
+	}
+}
