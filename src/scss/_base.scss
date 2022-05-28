@@ -1,0 +1,30 @@
+@use 'variables';
+@use 'mixins';
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	// background-color: variables.$base-color-background;
+	font-size: variables.$base-size-font;
+	color: variables.$base-color-font;
+}
+
+.container-wrapper {
+	display: flex;
+	position: relative;
+	min-height: calc(100vh - variables.$header-height - variables.$footer-height);
+	background-color: variables.$base-color-background;
+}
+.container {
+	max-width: variables.$page-width-max;
+	min-width: variables.$page-width-min;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.text-bold {
+	font-weight: 700;
+	color: variables.$base-color-font-bold;
+}

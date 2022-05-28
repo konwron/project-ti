@@ -1,0 +1,16 @@
+@use 'variables';
+@use 'mixins';
+
+footer {
+	display: flex;
+  justify-content: center;
+	height: variables.$footer-height;
+	font-size: .4 * variables.$footer-height;
+	background-color: variables.$base-color-background-secondary;
+	align-items: center;
+	box-shadow: 0 -3px 10px variables.$base-color-shade;
+	> .container {
+		display: flex;
+		justify-content: space-between;
+	}
+}

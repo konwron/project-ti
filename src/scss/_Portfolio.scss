@@ -1,0 +1,52 @@
+@use 'variables';
+@use 'mixins';
+.portfolio-page {
+	justify-content: center;
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.slide {
+	opacity: 0;
+	transition-duration: 1s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.slide.active {
+	opacity: 1;
+	transition-duration: 1s;
+}
+
+.image {
+	width: 80%;
+	height: 80%;
+	max-height: calc(.8 * (100vh - variables.$header-height - variables.$footer-height));
+	border-radius: 10px;
+}
+
+.right-arrow {
+	position: absolute;
+	top: 50%;
+	right: 10%;
+	font-size: 3rem;
+	color: rgb(255, 255, 255);
+	z-index: 10;
+	cursor: pointer;
+	user-select: none;
+}
+
+.left-arrow {
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	font-size: 3rem;
+	color: rgb(255, 255, 255);
+	z-index: 10;
+	cursor: pointer;
+	user-select: none;
+}

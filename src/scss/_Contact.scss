@@ -1,0 +1,56 @@
+@use 'variables';
+@use 'mixins';
+
+.contact-page {
+	justify-content: center;
+	background-image: url('../assets/bg-contact.png');
+	background-size: cover;
+	background-position: center;
+	.image-cover {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		z-index: 0;
+		background-color: rgba(0, 0, 0, 0.7);
+	}
+	.container {
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.contact {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 30px;
+}
+
+.column {
+	padding: 20px;
+	width: 50%;
+	ul {
+		list-style: none;
+	}
+}
+
+h3 {
+	color: variables.$base-color-font-bold;
+	padding-bottom: 15px;
+}
+
+.question, dt {
+	padding-top: 10px;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.answer, dd {
+	font-size: 14px;
+	font-weight: 100;
+
+}
