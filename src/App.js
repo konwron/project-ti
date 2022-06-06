@@ -4,6 +4,7 @@ import Header from './components/Header';
 import HomePage from './components/HomePage';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import AdminPanel from './components/AdminPanel';
 import ErrorPage from './components/ErrorPage';
 import Footer from './components/Footer';
 import './scss/App.scss';
@@ -17,6 +18,7 @@ const App = () => {
 					<Route exact path='/' element={<HomePage />} />
 					<Route path='/portfolio' element={<Portfolio />} />
 					<Route path='/contact' element={<Contact />} />
+					<Route path='/admin-panel' element={<AdminPanel />} />
 					<Route path='*' element={<ErrorPage />} />
 				</Routes>
 				<Footer />

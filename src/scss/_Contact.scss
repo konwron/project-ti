@@ -28,6 +28,9 @@
 	display: flex;
 	justify-content: space-between;
 	padding: 30px;
+	.question {
+		padding-top: 10px;
+	}
 }
 
 .column {
@@ -44,7 +47,6 @@ h3 {
 }
 
 .question, dt {
-	padding-top: 10px;
 	font-size: 16px;
 	font-weight: 700;
 }
